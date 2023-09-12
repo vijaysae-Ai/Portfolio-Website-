@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -13,51 +14,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<title>Contact Us</title>
+
+	<title>Vijayakumar Portfolio</title>
 </head>
 <body>
-
-	<!-- navbar -->
-
+		<!-- navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
-  <div class="container-fluid">
-    <a class="navbar-brand text-capitalize" href="index.html">VIJAYAKUMAR</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-      </li><li class="nav-item">
-        <a class="nav-link text-capitalize active" href="Resume.html">Resume </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-capitalize active" href="about.html">about</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="NLP.html">NLP project</a></li>
-            <li><a class="dropdown-item" href="Movie Recommendation System.html">Movie Recommendation System</a></li>
-			<li><a class="dropdown-item" href="Fraud Detection.html">Fraud Detection</a></li>
-			<li><a class="dropdown-item" href="Customer Churn Prediction.html">Customer Churn Prediction</a></li>
-            <li><a class="dropdown-item" href="Natural Language Processing for Customer Support.html">Natural Language Processing for Customer Support</a></li>
-			
-
-       
-        <li class="nav-item">
-          <a class="nav-link text-capitalize active" href="contact.html">contact us</a>
-        </li>
-        
-      </ul>
-      
-    </div>
-  </div>
-</nav>
+			<div class="container-fluid">
+				<a class="navbar-brand text-capitalize" href="{{ url_for('home') }}">VIJAYAKUMAR</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="navbar-brand text-capitalize" href="/">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-capitalize active" href="{{ url_for('resume') }}">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-capitalize active" href="{{ url_for('about') }}">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Projects
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="{{ url_for('nlp_project') }}">NLP project</a></li>
+								<li><a class="dropdown-item" href="{{ url_for('movie_recommendation') }}">Movie Recommendation System</a></li>
+								<li><a class="dropdown-item" href="{{ url_for('fraud_detection') }}">Fraud Detection</a></li>
+								<li><a class="dropdown-item" href="{{ url_for('customer_churn_prediction') }}">Customer Churn Prediction</a></li>
+								<li><a class="dropdown-item" href="{{ url_for('nlp_for_customer_support') }}">Natural Language Processing for Customer Support</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-capitalize active" href="{{ url_for('contact') }}">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<!-- navbar end-->
     <section class="main_heading my-5 mt-5">

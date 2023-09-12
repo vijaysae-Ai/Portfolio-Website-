@@ -12,7 +12,9 @@
 
 
 }
-
+.custom-brown-bg {
+    background-color: brown !important;
+}
 
 .horizontal-card-img img{
 	width: 100%;
