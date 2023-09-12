@@ -1,13 +1,6 @@
 pandas 
-notebook
 numpy
 scikit-learn
 matplotlib
-logger
-pyYAML
-
-
-joblib
-types-PyYAML
 Flask
 Flask-Cors
